@@ -1,9 +1,10 @@
 <app-nav-bar></app-nav-bar>
 <div class="container">
-    <div class="row mt-4">
-        <table class="table">
-            <thead>
-              <tr >
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table">
+                <thead>
+                  <tr>
                 <th scope="col">Employee Code</th>
                 <th scope="col">Employee Name</th>
                 <th scope="col">Designation</th>
@@ -16,7 +17,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let i of data">
+              <tr *ngFor="let i of employees">
                 <td>{{i.empcode}}</td>
                 <td>{{i.empname}}</td>
                 <td>{{i.designation}}</td>
