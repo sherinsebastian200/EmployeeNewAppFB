@@ -14,6 +14,7 @@ export class AddEmployeeComponent {
   mobno=""
   username=""
   password=""
+  constructor(private api:ApiService){}
 
   readValues=()=>
   
@@ -23,10 +24,14 @@ export class AddEmployeeComponent {
       "salary":this.salary,
       "companyname":this.companyname,"mobno":this.mobno,"username":this.username,"password":this.password}
       console.log(data)
+this.api.addEmployees(data).subscribe(
+  (response :any)=>{
+    console.log(response)
  
 
-    }
+  }
+  )
+  
+  }
+  }
 
-
-
-}
