@@ -9,6 +9,7 @@ import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 
 const myRoute:Routes=[
   {
@@ -27,7 +28,8 @@ const myRoute:Routes=[
     AppComponent,
     AddEmployeeComponent,
     ViewEmployeeComponent,
-    NavBarComponent
+    NavBarComponent,
+    SearchEmployeeComponent
   ],
   imports: [
     BrowserModule,
