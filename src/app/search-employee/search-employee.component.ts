@@ -29,4 +29,21 @@ export class SearchEmployeeComponent {
     )
   }
 
+  deleteBtnClick=(id:any)=>{
+    let data:any={"id":id}
+    this.api.deleteEmployees(data).subscribe(
+      (response:any)=>{
+        console.log(response)
+        if (response.status=="success") {
+          alert("employ deleted successfully")
+
+          
+        } else {
+          alert("can not delete")
+          
+        }
+      }
+    )
+  }
+
 }
