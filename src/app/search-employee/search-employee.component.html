@@ -13,7 +13,7 @@
                    <button class="btn btn-success" (click)="readValue()">Search</button>
                 </div>
             </div>
-<div class="row" *ngFor="let j of searchEmployees">
+<div class="row g-3" *ngFor="let j of searchEmployees">
    
     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
         <label for="" class="form-label">Employee Name</label>
@@ -43,6 +43,10 @@
         <label for="" class="form-label">Password</label>
         <input type="text" class="form-control" value="{{j.password}}">
     </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+    <button class="btn btn-danger">Delete</button>
+    </div>
+
 </div>
         </div>
     </div>
